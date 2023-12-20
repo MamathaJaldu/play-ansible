@@ -1,0 +1,8 @@
+- name: stop nginx server
+  hosts: web
+  become: yes # it will get root access
+  tasks: 
+   - name: stop nginx
+     ansible.builtin.service:
+       namw: nginx
+       state: stopped
