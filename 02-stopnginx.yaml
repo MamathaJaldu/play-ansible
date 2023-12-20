@@ -4,5 +4,5 @@
   tasks: 
    - name: stop nginx
      ansible.builtin.service:
-       namw: nginx
+       name: nginx
        state: stopped
